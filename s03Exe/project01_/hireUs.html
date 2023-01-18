@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"   href="css/style.css">
+        <title>SpaceX</title>
+    </head>
+    <header>
+        <nav>
+            <a href="index.html">
+            <img src="img/logo.png" alt="Logo SpaceX">
+            </a>
+            <a href="spaceships.html"> | Naves Espaciais | </a>
+            <a href="hireUs.html"> Contrate </a>
+        </nav>
+        </header>
+        <hr>
+    <body>
+        <h2>Contrate-nos Agora</h2>
+        <div>
+        <p>Deixe uma mensagem para solicitar um de nossos serviços e retornaremos o mais breve possível.</p>
+        <br/>
+        </div> 
+        <form action="">
+            <div id="forms">
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="name"> - 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+            </div>
+            <br><br>
+            <div id="forms">
+                <label for="spaceships">Naves: </label>
+                <select name="spaceships" id="spaceships">
+                <option value="falconine">Falcon 9</option>
+                <option value="falconheavy">Falcon Heavy</option>
+            </select> | 
+                <label for="services">Tipos de Serviços: </label>
+                <input type="search" id="services" name="services" list="service">
+                <datalist id="service">
+                    <option value="Viagem Órbita"></option>
+                    <option value="Salto  Estratosfera"></option>
+                    <option value="Visita Marte"></option>
+                    <option value="Visita Lua"></option>
+                </datalist>
+            </div>
+            <br><br>
+            <div id="forms">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </body>
+</html>
