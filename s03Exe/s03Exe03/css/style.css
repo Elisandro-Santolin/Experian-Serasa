@@ -3,11 +3,45 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: #f5f5f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 h1, h2 {
     text-align: justify;
 }
+h5 {
+    text-align: right;
+} 
 p {
     text-align: justify;
     font-size: 14px;
+}
+a {
+    text-decoration: none;   
+    color: #000000; 
+}
+div {
+    padding-top: 8px;
+    text-align: justify;
+}
+#title {
+    padding-left: 10%;
+    text-align: justify;
+}
+#titleImagem {
+    position: absolute;
+    left: 280px;
+}
+#image {
+    display: flex;
+    width: 235px;
+    padding-left: 10px;
+    float: right;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 10px;
+}
+#footer {
+    text-align: right;
+    font-style: italic;
 }
