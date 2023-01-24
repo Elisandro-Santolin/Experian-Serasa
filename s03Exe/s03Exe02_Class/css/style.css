@@ -1,17 +1,20 @@
 body {
-    width: 940px;
+    max-width: 940px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: #fffaf0;
     font-family: Arial, Helvetica, sans-serif;
 }
 .logoImage {
-    width: 145px;;
+    width: 100px;;
     height:65px; 
+
 }
 h1 {
     color: black;
     margin-top: 10px;
+    padding-top: 15px;
 }
 h2 {
     border-color: black;   
@@ -20,9 +23,27 @@ p {
     text-align: justify;
     font-size: 14px;
 }
-figure {
-    text-align: center;
+a {
+    text-decoration: none;
+    color: black;
 }
 #list {
     text-align: justify;
+}
+iframe {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+.banner {
+    width: 100%;
+}
+footer {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#footer {
+    font-size: 12px;
+    text-align: center;
 }
