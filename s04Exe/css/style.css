@@ -1,9 +1,18 @@
 body {
+    max-width: 100%;
     width: 940px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #ffffff;
+    background-color: #f3efef;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    line-height: 1.5;
+}
+#header {
+    position: flex;
+    left: 360px;
+    width: 55px;
+    float: left;
+    padding-top: 10px;
 }
 h1, h2 {
     font-style: normal;
@@ -16,7 +25,6 @@ h2 {
     border-left: none;
     border-right: none;
     border-top: none;
-
 }
 h5 {
     text-align: right;
@@ -36,41 +44,34 @@ a {
     color: #3D3D3D;
     text-align: center;
 }
-#titleImagem {
-    position: flex;
-    left: 360px;
-    width: 55px;
-    float: left;
-}
-#imageFirst {
-    display: block;
-    float: center;
-    background-color: whitesmoke;
-    width: 550px;
-    padding: 15px;
-    margin: auto;
-}
-#image {
-    display: inline-flex;
-    width: 275px;
-    height: 100%;
-    float: right;
-    background-color: whitesmoke;
-    padding: 15px;
-    margin: auto;
-    margin-left: 15px;
-}
-#font {
-    color: lightgrey;
-    padding: 10px 10px 10px 0;
-    text-align: center;
-}
-#fontImage{
-    color: lightgrey;
-    padding: 10px;
-    float: right;    
-}
 #footer {
     text-align: right;
     font-style: italic;
+}
+figcaption {
+    margin-top: 10px;
+    font-size: 10px;
+    color: lightgrey;
+}
+figure {
+    max-width: 100%;
+    background-color: whitesmoke;
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+}
+figure img {
+    width: 100%;
+    height: 100%;
+}
+.img-1 {
+    max-width: 550px;
+    max-height: 550px;
+    margin-left:auto;
+    margin-right: auto;   
+}
+.img-2 {
+    max-height: 275px;
+    max-width: 275px;
+    float: right;
 }
