@@ -39,6 +39,27 @@ a {
     text-decoration: none;
     color: black;
 }
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+.produtos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 #list {
     text-align: justify;
 }
