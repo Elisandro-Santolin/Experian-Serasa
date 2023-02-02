@@ -40,19 +40,19 @@ a {
     color: black;
 }
 .produtos {
-	width: 940px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 50px 0;
 }
 .produtos li {
-	display: inline-block;
+	display: inline-flex;
 	text-align: center;
 	width: 30%;
 	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
+	margin: 1.5%;
+	padding: auto;
 	box-sizing: border-box;
-	border: 2px solid #000000;
+	border: 1px solid #000000;
 	border-radius: 10px;
 }
 .produtos img {

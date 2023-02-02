@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<h1>JavaScript: formulário</h1>
+<h1>JavaScript: Formulário</h1>
 <style>
     .msg {
         padding: 15px 25px;
@@ -59,12 +59,12 @@
     <label for="">
         * Nome:
         <br>
-        <input type="text" placeholder="Fulano Ciclano" data-mensagem="Nome é obrigatório!" class="obrigatorio">
+        <input type="text" data-mensagem="Nome é obrigatório!" class="obrigatorio">
     </label>
     <label for="">
         * E-mail:
         <br>
-        <input type="email"  placeholder="seumelhoremail@email.com" data-mensagem="E-mail é obrigatório" class="obrigatorio">
+        <input type="email"  data-mensagem="E-mail é obrigatório!" class="obrigatorio">
     </label>
     <label for="">
         Telefone:
@@ -74,18 +74,33 @@
     <button>Enviar</button>
 </form>
 <script>
-    const formulario = document.querySelector('#form');
+    const formulario = document.querySelector('form');
+    const divMsg = document.createElement('div');
+    divMsg.classList.add('msg', 'msg-sucesso');
+
     
     formulario.addEventListener('submit', function(){
         event.preventDefault();
         const camposObrigatorios = formulario.querySelectorAll('.obrigatorio');
         const msgErro = [];
-        for (let campo of camposObrigatorios){
-            if(campo.value == '') {
+        for(let campo of camposObrigatorios){
+            if(campo.value === ''){
                 campo.classList.add('destacar');
-            }else {
+                msgErro.push(campo.dataset.mensagem);
+            }else{
                 campo.classList.remove('destacar');
             }
         }
-    });
+            if(msgErro.length > 0){
+                divMsg.innerHTML = `
+                <strong>Atenção!</strong><br>
+                ${msgErro.join('br')}
+                `;
+                divMsg.classList.replace('msg-sucesso', 'msg-erro'); 
+            }else{
+                divMsg.textContent = 'Cadastro realizado com sucesso';
+                divMsg.classList.replace('msg-erro', 'msg-sucesso');
+            }
+            formulario.prepend(divMsg);
+        });
 </script>

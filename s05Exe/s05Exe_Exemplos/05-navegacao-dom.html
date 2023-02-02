@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<h1>JavaScript: navegação na DOM</h1>
+<h1>JavaScript: Navegação na DOM</h1>
 <table>
     <thead>
         <tr>
@@ -74,5 +74,35 @@
     }
 </style>
 <script>
+    const tabela = document.querySelector('table');
 
+    tabela.addEventListener('click', event => {
+        if(event.target.classList.contains('excluir')){
+            alert('Você clicou na opção EXCLUIR');
+            const btnExcluir = event.target;
+            const tr = btnExcluir.closest('tr');
+            tr.remove();
+        }
+    });
+    tabela.addEventListener('click', event => {
+        if(event.target.classList.contains('editar')){
+            alert('Você clicou na opção EDITAR');
+            const btnEditar = event.target;
+            let isConteudoEditavel = false;
+
+            if(btnEditar.textContent.trim() == 'Editar'){
+                btnEditar.textContent = 'Salvar Edição';
+                isConteudoEditavel = true;
+            }else {
+                btnEditar.textContent = 'Editar'; 
+            }
+            let tdIrmão = btnEditar.parentElement.previousElementSibling;
+
+                while (tdIrmão != null){
+                    tdIrmão.classList.toggle('editavel');
+                    tdIrmão.contentEditable =  isConteudoEditavel;
+                    tdIrmão = tdIrmão.previousElementSibling;
+                }
+        }
+    });
 </script>
