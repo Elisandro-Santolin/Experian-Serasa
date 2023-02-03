@@ -68,6 +68,13 @@ iframe {
     padding-bottom: 25px;
     width: 100%;
 }
+.telefone {
+    padding: 10px 10px 10px 0x;
+    margin: auto;
+}
+.telefone dt {
+    padding: 0.5%;
+}
 .banner {
     max-width: 100%;
     display: block;
@@ -77,12 +84,16 @@ iframe {
 #footer {
     font-size: 11px;
     text-align: center;
+    padding-left: 105px;
 }
 .footerRede {
-    display: flex;
-    padding: 1em 1em;
-    flex-wrap: wrap;
-    justify-content: space-between;
     list-style-type: none;
-    font-size: 12px;
+}
+.footerRede img {
+    width: 25px;
+    display: flexbox;
+    float: right;
+    padding: 5px;
+    justify-content: space-between;
+    
 }
